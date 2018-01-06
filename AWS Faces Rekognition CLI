@@ -1,0 +1,64 @@
+aws rekognition create-collection \
+    --collection-id "Family" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+    aws rekognition delete-collection \
+    --collection-id "Family" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+aws rekognition index-faces \
+    --image '{"S3Object":{"Bucket":"family-photo-collection","Name":"Connor.JPG"}}' \
+    --collection-id "Family" \
+    --detection-attributes "ALL" \
+    --external-image-id "connor-id" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+aws rekognition index-faces \
+    --image '{"S3Object":{"Bucket":"family-photo-collection","Name":"Finn.JPG"}}' \
+    --collection-id "Family" \
+    --detection-attributes "ALL" \
+    --external-image-id "finn-id" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+aws rekognition index-faces \
+    --image '{"S3Object":{"Bucket":"family-photo-collection","Name":"Klaus.JPG"}}' \
+    --collection-id "Family" \
+    --detection-attributes "ALL" \
+    --external-image-id "klaus-id" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+aws rekognition index-faces \
+    --image '{"S3Object":{"Bucket":"family-photo-collection","Name":"Jacqueline.JPG"}}' \
+    --collection-id "Family" \
+    --detection-attributes "ALL" \
+    --external-image-id "jacqueline-id" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+aws rekognition list-faces \
+      --collection-id "Family" \
+      --region us-east-1
+      --profile jacoriordan
+
+
+aws rekognition search-faces-by-image \
+    --image '{"S3Object":{"Bucket":"vision-control-files","Name":"/var/www/html/vision.jpg"}}' \
+    --collection-id "Family" \
+    --region us-east-1 \
+    --profile jacoriordan
+
+
+aws rekognition detect-faces \
+--image '{"S3Object":{"Bucket":"vision-control-files","Name":"/var/www/html/vision.jpg"}}' \
+--attributes "ALL" \
+--region us-east-1 \
+--profile jacoriordan
+
+#stop the service
+sudo systemctl stop camera_test
+
