@@ -8,7 +8,11 @@ Below the hardware setup I used. One Raspberry Pi 3, powered by a battery pack. 
 
 ![Prototype](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSee-Prototype.JPG)
 
+## Use Cases
+### Vision Impaired Support
 This setup can be helpful for people with visual impairements. I debated an iphone app, but a physical button as a trigger and a simple self contained device such as the raspberry pi will be much easier for a visual impaired person to handle as they most likely cannot operate the iphone. 
+
+
 
 ## Raspberry PI Preperation
 In order to run the software install the following components:
