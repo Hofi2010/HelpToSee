@@ -6,7 +6,7 @@ Is a Raspberry Pi project that takes an image via a camera, sends the image to a
 ## Hardware Setup
 Below the hardware setup I used. One Raspberry Pi 3, powered by a battery pack. A Raspberry Pi Camera attached in the front and trigger button in the back. Whenever the user presses the button an image is taken and uploaded to AWS S3. AWS Rekognition service analyses the images and sends back the labels and face ids. The raspberry pi outputs the labels and person names via the headphones in my setup to the user. 
 
-![Prototype](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSee-Prototype.JPG)
+![Prototype](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSee-Prototype.JPG&s=10)
 
 This setup can be helpful for people with visual impairements. I debated an iphone app, but a physical button as a trigger and a simple self contained device such as the raspberry pi will be much easier for a visual impaired person to handle as they most likely cannot operate the iphone. 
 
