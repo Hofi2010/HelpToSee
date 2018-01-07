@@ -4,5 +4,5 @@ Is a Raspberry Pi project that takes an image via a camera, sends the image to a
 ![Architecture](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSeeArchitecture.001.jpeg)
 
 
-![Architecture](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSee Prototype.jpeg)
+![Prototype](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSee-Prototype.jpeg)
 
