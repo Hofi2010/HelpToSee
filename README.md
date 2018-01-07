@@ -3,12 +3,14 @@ Is a Raspberry Pi project that takes an image via a camera, sends the image to a
 
 ![Architecture](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSeeArchitecture.001.jpeg)
 
-# Hardware Setup
-Below the hardware setup I used. One Raspberry Pi 3, powered by a battery pack. A Raspberry Pi Camera attached in the front and trigger button in the back. Whenever the user presses the button an image is taken and copied to AWS S3.
+## Hardware Setup
+Below the hardware setup I used. One Raspberry Pi 3, powered by a battery pack. A Raspberry Pi Camera attached in the front and trigger button in the back. Whenever the user presses the button an image is taken and uploaded to AWS S3. AWS Rekognition service analyses the images and sends back the labels and face ids. The raspberry pi outputs the labels and person names via the headphones in my setup to the user. 
 
 ![Prototype](https://github.com/Hofi2010/HelpToSee/raw/master/HelpToSee-Prototype.JPG)
 
-# Raspberry PI Preperation
+This setup can be helpful for people with visual impairements. I debated an iphone app, but a physical button as a trigger and a simple self contained device such as the raspberry pi will be much easier for a visual impaired person. 
+
+## Raspberry PI Preperation
 In order to run the software install the following components:
 1. Pyhtion 2.7
 2. AWS CLI
@@ -16,6 +18,8 @@ In order to run the software install the following components:
 4. Raspberry PI Camera for Python library
 5. GPIO Python Library
 
-# AWS Preperations
+This application needs WiFi conection and therefore can be a bit slow
+
+## AWS Preperations
 You have to create a collection for rekognition with photos of people you want to detect. It is better to have multiple photos for each person to increase detection accuracy. The file "AWS Faces Rekognition CLI" includes all the command line command to create a library and index faces into it. Is is easiest to upload the images to AWS S3 for registration with the collection.
 
